@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include "menu.h"
 #include "input_data.h"
 #include "ImageHandler.h"

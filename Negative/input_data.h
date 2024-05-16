@@ -1,25 +1,25 @@
 #include "ImageHandler.h"
 #ifndef INPUT_DATA_H
 #define INPUT_DATA_H
-//модуль ввода данных
+//РјРѕРґСѓР»СЊ РІРІРѕРґР° РґР°РЅРЅС‹С…
 /// <summary>
-/// Функция для ввода данных c клавиатуры через командную строку с преобразованием
+/// Р¤СѓРЅРєС†РёСЏ РґР»СЏ РІРІРѕРґР° РґР°РЅРЅС‹С… c РєР»Р°РІРёР°С‚СѓСЂС‹ С‡РµСЂРµР· РєРѕРјР°РЅРґРЅСѓСЋ СЃС‚СЂРѕРєСѓ СЃ РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµРј
 /// </summary>
-/// <param name="original">Адрес для размещения исходного изображения</param>
-/// <param name="negative">Адрес для размещения негатива</param>
-/// <param name="n">кол-во строк</param>
-/// <param name="m">кол-во столбцов</param>
-/// <returns>Код ошибки или NO_ERROR</returns>
+/// <param name="original">РђРґСЂРµСЃ РґР»СЏ СЂР°Р·РјРµС‰РµРЅРёСЏ РёСЃС…РѕРґРЅРѕРіРѕ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ</param>
+/// <param name="negative">РђРґСЂРµСЃ РґР»СЏ СЂР°Р·РјРµС‰РµРЅРёСЏ РЅРµРіР°С‚РёРІР°</param>
+/// <param name="n">РєРѕР»-РІРѕ СЃС‚СЂРѕРє</param>
+/// <param name="m">РєРѕР»-РІРѕ СЃС‚РѕР»Р±С†РѕРІ</param>
+/// <returns>РљРѕРґ РѕС€РёР±РєРё РёР»Рё NO_ERROR</returns>
 char InputHandler(Image original, Image negative, int& n, int& m);
 /// <summary>
-/// Функция для ввода данных из файла с преобразованием
+/// Р¤СѓРЅРєС†РёСЏ РґР»СЏ РІРІРѕРґР° РґР°РЅРЅС‹С… РёР· С„Р°Р№Р»Р° СЃ РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµРј
 /// </summary>
-/// <param name="fname">Название файла</param>
-/// <param name="original">Адрес для размещения исходного изображения</param>
-/// <param name="negative">Адрес для размещения негатива</param>
-/// <param name="n">кол-во строк</param>
-/// <param name="m">кол-во столбцов</param>
-/// <returns>Код ошибки или NO_ERROR</returns>
+/// <param name="fname">РќР°Р·РІР°РЅРёРµ С„Р°Р№Р»Р°</param>
+/// <param name="original">РђРґСЂРµСЃ РґР»СЏ СЂР°Р·РјРµС‰РµРЅРёСЏ РёСЃС…РѕРґРЅРѕРіРѕ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ</param>
+/// <param name="negative">РђРґСЂРµСЃ РґР»СЏ СЂР°Р·РјРµС‰РµРЅРёСЏ РЅРµРіР°С‚РёРІР°</param>
+/// <param name="n">РєРѕР»-РІРѕ СЃС‚СЂРѕРє</param>
+/// <param name="m">РєРѕР»-РІРѕ СЃС‚РѕР»Р±С†РѕРІ</param>
+/// <returns>РљРѕРґ РѕС€РёР±РєРё РёР»Рё NO_ERROR</returns>
 char InputHandler(const char* fname, Image original, Image negative, int& n, int& m);
 #endif  INPUT_DATA_H
 

@@ -14,10 +14,10 @@
 #define STR_LINE "-----------------------------------\n"
 using namespace std;
 /// <summary>
-/// Опрашивает и возвращает пользовательский ввод
+/// РћРїСЂР°С€РёРІР°РµС‚ Рё РІРѕР·РІСЂР°С‰Р°РµС‚ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊСЃРєРёР№ РІРІРѕРґ
 /// </summary>
-/// <param name="message">Сообщение пользователю</param>
-/// <returns>Пользовательский ввод(&lt;= 200 символов)</returns>
+/// <param name="message">РЎРѕРѕР±С‰РµРЅРёРµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЋ</param>
+/// <returns>РџРѕР»СЊР·РѕРІР°С‚РµР»СЊСЃРєРёР№ РІРІРѕРґ(&lt;= 200 СЃРёРјРІРѕР»РѕРІ)</returns>
 inline char * Ask(const char* message,int max_size = 200){
     cout<<message;
     static char buffer[200];
@@ -26,26 +26,25 @@ inline char * Ask(const char* message,int max_size = 200){
     return buffer;
 }
 /// <summary>
-/// Вывод благодарности
+/// Р’С‹РІРѕРґ Р±Р»Р°РіРѕРґР°СЂРЅРѕСЃС‚Рё
 /// </summary>
 inline void EndOfProgram(){
-    std::cout << "";
-cout<< STR_LINE <<"Thanks for using our program!\n"<< STR_LINE;
+    cout<< STR_LINE <<"Thanks for using our program!\n"<< STR_LINE;
 }
 /// <summary>
-/// Форматированный вывод кол-во ошибок в негативе
+/// Р¤РѕСЂРјР°С‚РёСЂРѕРІР°РЅРЅС‹Р№ РІС‹РІРѕРґ РєРѕР»-РІРѕ РѕС€РёР±РѕРє РІ РЅРµРіР°С‚РёРІРµ
 /// </summary>
-/// <param name="mistakes">кол-во ошибок</param>
+/// <param name="mistakes">РєРѕР»-РІРѕ РѕС€РёР±РѕРє</param>
 inline void PrintData(int mistakes){
     std::cout << STR_LINE << "Mistakes:" << mistakes <<'\n'<< STR_LINE;
 }
 /// <summary>
-/// Вывод массивов с обратным преобразованием
+/// Р’С‹РІРѕРґ РјР°СЃСЃРёРІРѕРІ СЃ РѕР±СЂР°С‚РЅС‹Рј РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµРј
 /// </summary>
-/// <param name="image1">2-мерный массив nxm</param>
-/// <param name="image2">2-мерный массив nxm</param>
-/// <param name="n">кол-во строк</param>
-/// <param name="m">кол-во столбцов</param>
+/// <param name="image1">2-РјРµСЂРЅС‹Р№ РјР°СЃСЃРёРІ nxm</param>
+/// <param name="image2">2-РјРµСЂРЅС‹Р№ РјР°СЃСЃРёРІ nxm</param>
+/// <param name="n">РєРѕР»-РІРѕ СЃС‚СЂРѕРє</param>
+/// <param name="m">РєРѕР»-РІРѕ СЃС‚РѕР»Р±С†РѕРІ</param>
 inline void PrintData(const Image image1, const Image image2, int n, int m) {
     std::cout << STR_LINE <<"n = " << n << ", m = " << m << "\n\n";
     for (int i = 0; i < n; ++i) {
@@ -60,9 +59,9 @@ inline void PrintData(const Image image1, const Image image2, int n, int m) {
     std::cout << STR_LINE;
 }
 /// <summary>
-/// Логирование сообщений об ошибке | игнорирование NO_ERROR
+/// Р›РѕРіРёСЂРѕРІР°РЅРёРµ СЃРѕРѕР±С‰РµРЅРёР№ РѕР± РѕС€РёР±РєРµ | РёРіРЅРѕСЂРёСЂРѕРІР°РЅРёРµ NO_ERROR
 /// </summary>
-/// <param name="error">код ошибки</param>
+/// <param name="error">РєРѕРґ РѕС€РёР±РєРё</param>
 inline void ErrorHandler(char error) {
     const char* descriptions[] = { "Success", "Failed to get data", "Incorrect image sizes(n,m is int[1,100])", "Failed to open file","Not enough data",
     "Processing of empty data","Incorrect image(s)"};

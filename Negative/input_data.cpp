@@ -20,27 +20,11 @@ char InputImage(T& f,Image image, int n, int m) {
     return NO_ERROR;
 }
 
-//char InputImage(Image image, int n, int m) {
-//    char ch;
-//    for (int i = 0; i < n; i++) {
-//        for (int j = 0; j < m;) {
-//            cin >> ch;
-//            image[i][j];
-//            if (ch != 'W' && ch != 'B') {
-//                if (ch == ' ' || ch == '\n')continue;
-//                return ERROR_INCORRECT_IMAGE;
-//            }
-//            image[i][j++] = (ch=='W');
-//        }
-//    }
-//    return NO_ERROR;
-//}
-
 /// <summary>
-/// Выделяет число (&lt;5 цифр) из форматированного ввода
+/// Р’С‹РґРµР»СЏРµС‚ С‡РёСЃР»Рѕ (&lt;5 С†РёС„СЂ) РёР· С„РѕСЂРјР°С‚РёСЂРѕРІР°РЅРЅРѕРіРѕ РІРІРѕРґР°
 /// </summary>
-/// <param name="f">целевой файл</param>
-/// <returns>Первое найденное по модулю число или -1 в противном</returns>
+/// <param name="f">С†РµР»РµРІРѕР№ С„Р°Р№Р»</param>
+/// <returns>РџРµСЂРІРѕРµ РЅР°Р№РґРµРЅРЅРѕРµ РїРѕ РјРѕРґСѓР»СЋ С‡РёСЃР»Рѕ РёР»Рё -1 РІ РїСЂРѕС‚РёРІРЅРѕРј</returns>
 int GetNextNumber(ifstream& f) {
     char ch;
     int j = 0;

@@ -3,12 +3,12 @@
 #include <math.h>
 typedef bool Image[100][100];
 /// <summary>
-/// Сравнивает негатив исходного изображения с переданным негативом, находя кол-во различий
+/// РЎСЂР°РІРЅРёРІР°РµС‚ РЅРµРіР°С‚РёРІ РёСЃС…РѕРґРЅРѕРіРѕ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ СЃ РїРµСЂРµРґР°РЅРЅС‹Рј РЅРµРіР°С‚РёРІРѕРј, РЅР°С…РѕРґСЏ РєРѕР»-РІРѕ СЂР°Р·Р»РёС‡РёР№
 /// </summary>
-/// <param name="original">Исходное изображение</param>
-/// <param name="negative">Негатив</param>
-/// <param name="n">кол-во строк</param>
-/// <param name="m">кол-во столбцов</param>
-/// <returns>кол-во ошибок в негативе</returns>
+/// <param name="original">РСЃС…РѕРґРЅРѕРµ РёР·РѕР±СЂР°Р¶РµРЅРёРµ</param>
+/// <param name="negative">РќРµРіР°С‚РёРІ</param>
+/// <param name="n">РєРѕР»-РІРѕ СЃС‚СЂРѕРє</param>
+/// <param name="m">РєРѕР»-РІРѕ СЃС‚РѕР»Р±С†РѕРІ</param>
+/// <returns>РєРѕР»-РІРѕ РѕС€РёР±РѕРє РІ РЅРµРіР°С‚РёРІРµ</returns>
 int FindMistakes(const Image original, const Image negative, int n, int m);
 #endif  IMAGE_HANDLER_CPP
